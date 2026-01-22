@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { BackgroundEffects } from './components/BackgroundEffects';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -83,6 +84,7 @@ const App: React.FC = () => {
       </div>
 
       <elevenlabs-convai agent-id="agent_1801kfhexxhney4bhdyevqsrvz84"></elevenlabs-convai>
+      <Analytics />
     </div>
   );
 };
