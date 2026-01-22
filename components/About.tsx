@@ -221,7 +221,7 @@ export const About: React.FC<{ onViewChange: (view: string) => void }> = ({ onVi
          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center justify-center max-w-4xl mx-auto">
             <div className="group cursor-default">
                <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-noble-500/20 transition-all duration-500">
-                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Matei Mazaran" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
+                 <img src="/images/about/matths.png" alt="Matei Mazaran" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
                  <div className="absolute inset-0 bg-noble-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
                </div>
                <h3 className="text-3xl font-bold text-white mb-2">Matei Mazaran</h3>
@@ -230,7 +230,7 @@ export const About: React.FC<{ onViewChange: (view: string) => void }> = ({ onVi
             
             <div className="group cursor-default">
                <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-noble-500/20 transition-all duration-500">
-                 <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop" alt="Mario Preda" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
+                 <img src="/images/about/mariohs.png" alt="Mario Preda" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
                  <div className="absolute inset-0 bg-noble-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
                </div>
                <h3 className="text-3xl font-bold text-white mb-2">Mario Preda</h3>
