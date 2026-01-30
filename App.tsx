@@ -15,9 +15,11 @@ import { WebsiteServices } from './components/WebsiteServices';
 // Declare the custom element to satisfy TypeScript/JSX
 
 
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+
 const App: React.FC = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [currentView, setCurrentView] = useState('home');
+  const location = useLocation();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -30,7 +32,7 @@ const App: React.FC = () => {
   // Simple scroll to top on view change
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [currentView]);
+  }, [location.pathname]);
 
   return (
     <div className="relative min-h-screen bg-background text-white selection:bg-noble-500/30">
@@ -43,22 +45,26 @@ const App: React.FC = () => {
       <BackgroundEffects />
 
       <div className="relative z-10">
-        <Navbar currentView={currentView} onViewChange={setCurrentView} />
+        <Navbar />
 
         <main className="flex flex-col items-center w-full overflow-hidden min-h-screen">
-          {currentView === 'home' && (
-            <>
-              <Hero />
-              <ValueDetailed />
-              <SocialProof />
-              <ClientNotifications />
-              <CTA />
-            </>
-          )}
-          {currentView === 'website-services' && <WebsiteServices />}
-          {currentView === 'services' && <Services />}
-          {currentView === 'case-studies' && <CaseStudies />}
-          {currentView === 'about' && <About onViewChange={setCurrentView} />}
+          <Routes>
+            <Route path="/" element={<Navigate to="/Home" replace />} />
+            <Route path="/Home" element={
+              <>
+                <Hero />
+                <ValueDetailed />
+                <SocialProof />
+                <ClientNotifications />
+                <CTA />
+              </>
+            } />
+            <Route path="/Services" element={<Services />} />
+            <Route path="/CaseStudies" element={<CaseStudies />} />
+            <Route path="/WebsiteServices" element={<WebsiteServices />} />
+            <Route path="/AboutUs" element={<About />} />
+            <Route path="*" element={<Navigate to="/Home" replace />} />
+          </Routes>
         </main>
 
         <footer className="w-full py-12 px-6 border-t border-white/5 mt-auto bg-black/50 backdrop-blur-md">
