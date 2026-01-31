@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto w-full flex flex-col items-center text-center overflow-hidden">
+    <section className="relative w-full overflow-hidden">
 
       {/* Parallax Background Image */}
       <motion.div
@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
         />
       </motion.div>
 
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 md:pt-48 md:pb-32 flex flex-col items-center text-center">
 
         {/* Badge Hook */}
         <div className="mb-8 animate-[fadeIn_0.5s_ease-out]">
