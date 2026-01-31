@@ -92,34 +92,33 @@ export const Hero: React.FC = () => {
 
         {/* Prestige Results Strip */}
         <div className="w-full max-w-6xl animate-[fadeIn_1.3s_ease-out_0.8s_both]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-y border-white/10 bg-black/20 backdrop-blur-sm divide-y md:divide-y-0 md:divide-x divide-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-y border-white/10 bg-black/40 backdrop-blur-xl divide-y md:divide-y-0 md:divide-x divide-white/10 rounded-3xl overflow-hidden">
 
             <div className="p-8 flex flex-col items-center justify-center group hover:bg-white/5 transition-colors duration-500">
-              <span className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300">$250M+</span>
-              <span className="text-xs text-gray-500 uppercase tracking-widest font-medium text-center">Property Value Marketed</span>
+              <span className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300 drop-shadow-lg">$250M+</span>
+              <span className="text-xs text-gray-400 uppercase tracking-widest font-medium text-center">Property Value Marketed</span>
             </div>
 
             <div className="p-8 flex flex-col items-center justify-center group hover:bg-white/5 transition-colors duration-500">
-              <span className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300">1,000+</span>
-              <span className="text-xs text-gray-500 uppercase tracking-widest font-medium text-center">Listings & Builds Captured</span>
+              <span className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300 drop-shadow-lg">1,000+</span>
+              <span className="text-xs text-gray-400 uppercase tracking-widest font-medium text-center">Listings & Builds Captured</span>
             </div>
 
             <div className="p-8 flex flex-col items-center justify-center group hover:bg-white/5 transition-colors duration-500">
-              <span className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300">7+ Years</span>
-              <span className="text-xs text-gray-500 uppercase tracking-widest font-medium text-center">Real Estate Media Expertise</span>
+              <span className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight group-hover:scale-105 transition-transform duration-300 drop-shadow-lg">7+ Years</span>
+              <span className="text-xs text-gray-400 uppercase tracking-widest font-medium text-center">Real Estate Media Expertise</span>
             </div>
 
             <div className="p-8 flex flex-col items-center justify-center group hover:bg-white/5 transition-colors duration-500">
               <div className="flex flex-col gap-2 items-center text-center">
-                <span className="text-lg font-bold text-white">Agents</span>
+                <span className="text-lg font-bold text-white drop-shadow-md">Agents</span>
                 <span className="w-1 h-1 bg-noble-500 rounded-full opacity-50"></span>
-                <span className="text-lg font-bold text-white">Builders</span>
+                <span className="text-lg font-bold text-white drop-shadow-md">Builders</span>
                 <span className="w-1 h-1 bg-noble-500 rounded-full opacity-50"></span>
-                <span className="text-lg font-bold text-white">Developers</span>
+                <span className="text-lg font-bold text-white drop-shadow-md">Developers</span>
               </div>
-              <span className="text-xs text-gray-500 uppercase tracking-widest font-medium mt-3 text-center">Our Partners</span>
+              <span className="text-xs text-gray-400 uppercase tracking-widest font-medium mt-3 text-center">Our Partners</span>
             </div>
-
           </div>
         </div>
 
