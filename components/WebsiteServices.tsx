@@ -409,7 +409,7 @@ export const WebsiteServices: React.FC = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#030303]/50 to-[#030303] z-10" />
         <img
-          src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=2500&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1545845497-f57021dae168?q=80&w=3270&auto=format&fit=crop"
           alt="Digital Services Background"
           className="w-full h-full object-cover opacity-60"
         />
