@@ -396,8 +396,24 @@ export const WebsiteServices: React.FC = () => {
 
 
 
+  const imageY = useTransform(scrollY, [0, 500], [0, 200]);
+  const imageOpacity = useTransform(scrollY, [0, 500], [1, 0]);
+
   return (
-    <div className="relative min-h-screen w-full pt-32 pb-20 px-6">
+    <div className="relative min-h-screen w-full pt-32 pb-20">
+
+      {/* Parallax Background Image */}
+      <motion.div
+        style={{ y: imageY, opacity: imageOpacity }}
+        className="absolute inset-0 w-full h-[120vh] z-0 pointer-events-none"
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#030303]/50 to-[#030303] z-10" />
+        <img
+          src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=2500&auto=format&fit=crop"
+          alt="Digital Services Background"
+          className="w-full h-full object-cover opacity-60"
+        />
+      </motion.div>
 
       {/* Background Decor - Parallax Shapes */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
@@ -406,7 +422,7 @@ export const WebsiteServices: React.FC = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col items-center">
 
         {/* Header Section */}
         <div className="text-center max-w-3xl mb-24">
